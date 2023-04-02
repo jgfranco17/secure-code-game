@@ -1,6 +1,6 @@
 import unittest
 import os
-import code as c
+import attempt as c
 
 class TestTaxPayer(unittest.TestCase):
     
@@ -46,4 +46,7 @@ class TestTaxPayer(unittest.TestCase):
 
 
 if __name__ == '__main__':    
-    unittest.main()
+    unittest.main(testRunner=unittest.TextTestRunner(
+        descriptions=False,
+        verbosity=2)
+    )
